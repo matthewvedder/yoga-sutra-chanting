@@ -15,7 +15,7 @@ const lines = [
 
 const mapLines = () => {
   return lines.map((line, index) => {
-    return <Track line={line} lineIndex={`1-${index}`}/>
+    return <Track line={line} lineIndex={`1-${index}`} key={`1-${index}`} />
   })
 }
 
