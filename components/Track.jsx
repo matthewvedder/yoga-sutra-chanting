@@ -10,9 +10,10 @@ export default function Track(props) {
   const [sound, setSound] = React.useState();
   console.log(paths)
 
+
   async function playSound() {
     console.log('Loading Sound');
-    console.log('test', paths)
+    await Audio.setAudioModeAsync({ playsInSilentModeIOS: true })
     const { sound } = await Audio.Sound.createAsync(
        paths[props.lineIndex]
     );
