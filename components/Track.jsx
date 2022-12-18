@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet } from 'react-native';
 import { Icon, Button, Layout, Text } from '@ui-kitten/components';
 import { Audio } from 'expo-av';
@@ -10,10 +10,10 @@ const PauseIcon = (props) => <Icon style={styles.icon} {...props} name='pause-ci
 export default function Track(props) {
   const [sound, setSound] = React.useState()
   const [isPlaying, setIsPlaying] = React.useState(false)
-  console.log(paths)
 
 
   async function playSound() {
+    props.setTrackIndex(props.lineIndex)
     await Audio.setAudioModeAsync({ playsInSilentModeIOS: true })
     const { sound } = await Audio.Sound.createAsync(
        paths[props.lineIndex]
@@ -55,15 +55,19 @@ export default function Track(props) {
       }
     }
 
-  console.log(isPlaying)
-
-  React.useEffect(() => {
+  useEffect(() => {
     return sound
       ? () => {
-          console.log('Unloading Sound');
           sound.unloadAsync(); }
       : undefined;
   }, [sound]);
+
+  useEffect(() => {
+    if (sound && props.trackIndex && (props.trackIndex !== props.lineIndex)) {
+      sound.pauseAsync()
+      setIsPlaying(false)
+    }
+  }, [props.trackIndex]);
 
   const getIcon = () => {
     return isPlaying ?  PauseIcon : PlayIcon
@@ -71,8 +75,8 @@ export default function Track(props) {
 
   return (
     <Layout style={styles.layout}>
-      <Button style={styles.button} accessoryLeft={getIcon()} onPress={playSound} appearance='ghost' size='large' />
-      <Text>{ props.line }</Text>
+      <Button accessoryLeft={getIcon()} onPress={playSound} appearance='ghost' size='large' />
+      <Text style={styles.text}>{ props.line }</Text>
     </Layout>
   );
 }
@@ -82,12 +86,16 @@ const styles = StyleSheet.create({
     width: 32,
     height: 32,
   },
-  button: {
+  text: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    lineHeight: 30
   },
   layout: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    width: '80%',
+    marginBottom: 10
   }
 });

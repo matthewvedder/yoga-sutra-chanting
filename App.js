@@ -16,7 +16,7 @@ const SafeArea = () => {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: theme['background-basic-color-1']
+      backgroundColor: theme['background-basic-color-1'],
     },
   });
 
