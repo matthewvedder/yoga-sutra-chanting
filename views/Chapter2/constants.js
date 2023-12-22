@@ -1,17 +1,17 @@
 export const LINES = [
   'Atha sādha̍napā̱daḥ',
-  '1. Ta̱pa̱ḥ svā̱dhyāya īśvaraprāṇdhānānī kri̍yāyo̱gaḥ',
-  '2. Sa̱mā̱dhibhāvanārthaḥ kle̱śa ta̱nū̱ka̱ra̱ṇā̱rthaśca',
-  '3. A̱vi̱dyā a̱smi̱tā rā̱ga dve̱śa a̱bhi̱ni̱ve̱śāḥ kle̱śāḥ',
+  '1. Ta̱pa̱ḥ svā̱dhyāya īśvaraprāṇidhānānī kri̍yāyo̱gaḥ',
+  '2. Sa̱mā̱dhibhā̱vanārthaḥ kle̱śa ta̱nū̱ka̱ra̱ṇā̱rthaśca',
+  '3. A̱vi̱dyā a̱smi̱tā rā̱ga dve̱ṣa a̱bhi̱ni̱ve̱śāḥ kle̱śāḥ',
   '4. A̱vi̱dyā kṣe̱tram u̍ttare̱ṣām pra̱su̱pta ta̱nu vi̱cchi̱nna u̍dārā̱ṇām',
   '5. A̱ni̱tya a̱śu̱ci du̱ḥkha a̱nā̱tmasu ni̱tya śu̱ci su̱kha ātmakhyāti̍ḥ a̱vi̱dyā',
   '6. Dṛ̱kda̱rśana śa̱ktyoḥ e̱kā̱tmatā iva a̍smi̱tā',
   '7. Su̱khā̱nuśa̱yī rāgaḥ',
   '8. Du̱ḥkhā̱nuśa̱yī dveṣaḥ',
-  '9. Sva̱ra̱savā̱hi vi̱du̱so’pi sa̱mā̱ruḍhaḥ a̱bhi̱ni̱veśaḥ',
+  '9. Sva̱ra̱savā̱hi vi̱du̱so’pi sa̱mā̱rūḍhaḥ a̱bhi̱ni̱veśaḥ',
   '10. Te pra̱tipra̱sa̱vahe̱yāḥ sū̱kṣmāḥ',
   '11. Dhyā̱nahe̱yāḥ tadvṛttayaḥ',
-  '12. Kle̱śamū̱lāḥ ka̱rmā̱śa̱yo dṛ̱ṣṭādṛṣṭajanma ve̍danī̱yaḥ',
+  '12. Kle̱śamū̱laḥ ka̱rmā̱śa̱yo dṛ̱ṣṭādṛṣṭajanma ve̍danī̱yaḥ',
   '13. Sa̍timū̱le ta̍dvipā̱ko jātyā̍yurbho̱gāḥ',
   '14. Te hlā̱dapa̱ri̱tāpa̍pha̱lāḥ puṇyāpuṇyahe̍tu̱tvāt',
   '15. Pa̱ri̱ṇāma tāpa sa̱ṁskāra̍du̱hkhaiḥ gu̱ṇavṛ̱ttivi̱ro̱dhācca du̱ḥkhameva sarva̍m vive̱kinaḥ',
@@ -33,7 +33,7 @@ export const LINES = [
   '31. Jā̱ti de̱śa kā̱la sa̱ma̱ya a̱na̱va̱cchi̱nnāḥ sa̱rvabha̱umāḥ ma̍hāvra̱tam',
   '32. Śa̱uca sa̱ṁtoṣa tapaḥ svā̱dhyāya īśvarapraṇidhānāni̍ niya̱māḥ',
   '33. Vi̱ta̱rkabā̱dha̱ne pratipakṣa̍bhāva̱nam',
-  '34. Vi̱ta̱rkāḥ hi̱ṁsādayaḥ kṛ̱ta kā̱ri̱tā a̱nu̱mo̱di̱tāḥ lo̱bha kro̱dha mo̱hapū̱rva̱kāḥ mṛ̱du ma̱dhya a̱dhi̱mā̱trāḥ du̱ḥkha a̱jñā̱na a̱na̱ntapha̱lāḥ iti pra̱tipakṣa̍bhā̱va̱nam',
+  '34. Vi̱ta̱rkāḥ hi̱ṁsādayaḥ kṛ̱ta kā̱ri̱tā a̱nu̱mo̱di̱tāḥ lo̱bha kro̱dha mo̱hapū̱rva̱kāḥ mṛ̱du ma̱dhya a̱dhi̱mā̱trāḥ du̱ḥkha a̱jñā̱na a̱na̱ntapha̱lāḥ iti pra̱tipakṣa̍bhāva̱nam',
   '35. A̱hi̱msāpra̍tiṣṭhā̱yām tatsa̱nni̱dhau vai̍ratyā̱gaḥ',
   '36. Sa̱tyapra̍tiṣṭhā̱yām kri̱̱yāphala ā̍̍śraya̱̱tvam',
   '37. A̱ste̱yapra̍tiṣṭhā̱yām sarvaratna u̍pasthā̱nam',
@@ -55,5 +55,5 @@ export const LINES = [
   '53. Dhā̱ra̱ṇāsu ca yogyatā̍ mana̱saḥ',
   '54. Svavi̱ṣa̱ya a̱sa̱ṁprayo̱ge ci̱tta̱sya sva̱rūpanukāra̍ i̱va i̱ndri̱yāṇām pra̍tyāhā̱raḥ',
   '55. Ta̱taḥ pa̱ra̱māvaśyatā i̍ndriyā̱ṇām',
-  'Iti pāta̱ñja̱la̱yo̱gasu̱tre sādhana pāda̍ḥ  dviti̱yaḥ'
+  'Iti pā̱ta̱ñja̱la̱yo̱gasu̱tre sādhana pāda̍ḥ dvī̱ti̱yaḥ'
 ]
