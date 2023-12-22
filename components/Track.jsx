@@ -16,7 +16,7 @@ export default function Track(props) {
     props.setTrackIndex(props.lineIndex)
     await Audio.setAudioModeAsync({ playsInSilentModeIOS: true })
     const { sound } = await Audio.Sound.createAsync(
-       paths[props.lineIndex]
+      paths[props.lineIndex]
     );
 
     sound.setOnPlaybackStatusUpdate(onPlaybackStatusUpdate)
