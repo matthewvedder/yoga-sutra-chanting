@@ -17,10 +17,19 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.matthewvedder.yfchanting"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "87f01f4a-63bb-42d1-a17a-6442ff2548c9"
+      }
+    },
+    "android": {
+      "package": "com.matthewvedder.yfchanting"
     }
   }
 }
