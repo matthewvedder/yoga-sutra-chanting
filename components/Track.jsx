@@ -4,8 +4,8 @@ import { Icon, Button, Layout, Text } from '@ui-kitten/components';
 import { Audio } from 'expo-av';
 import paths from '../trackpaths'
 
-const PlayIcon = (props) => <Icon style={styles.icon} {...props} name='play-circle'/>
-const PauseIcon = (props) => <Icon style={styles.icon} {...props} name='pause-circle'/>
+const PlayIcon = (props) => <Icon {...props} name='play-circle'/>
+const PauseIcon = (props) => <Icon {...props} name='pause-circle'/>
 
 export default function Track(props) {
   const [sound, setSound] = React.useState()
@@ -82,14 +82,11 @@ export default function Track(props) {
 }
 
 const styles = StyleSheet.create({
-  icon: {
-    width: 32,
-    height: 32,
-  },
   text: {
     display: 'flex',
     flexWrap: 'wrap',
-    lineHeight: 30
+    lineHeight: 30,
+    fontSize: 18,
   },
   layout: {
     flexDirection: 'row',
