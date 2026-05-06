@@ -40,7 +40,10 @@ const DrawerContent = ({ navigation, state }) => {
 const DrawerNavigator = () => (
   <Navigator
     drawerContent={props => <DrawerContent {...props}/>}
-    drawerStyle={{ backgroundColor: 'transparent' }}
+    screenOptions={{
+      headerShown: false,
+      drawerStyle: { backgroundColor: 'transparent' },
+    }}
   >
     <Screen name='Chapter 1' component={Chapter1}/>
     <Screen name='Chapter 2' component={Chapter2}/>

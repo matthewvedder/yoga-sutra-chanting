@@ -30,6 +30,9 @@
     },
     "android": {
       "package": "com.matthewvedder.yfchanting"
-    }
+    },
+    "plugins": [
+      "expo-audio"
+    ]
   }
 }
