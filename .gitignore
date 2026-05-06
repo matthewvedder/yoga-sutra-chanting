@@ -18,5 +18,8 @@ android/
 # Lockfile from the wrong package manager (we use yarn)
 package-lock.json
 
+# Local secrets
+.env
+
 # macOS
 .DS_Store
